@@ -1,0 +1,31 @@
+.view {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f2f2f2;
+}
+
+.view * {
+  /* border: 1px solid black; */
+}
+
+header {
+  height: 5%;
+  width: 100vw;
+  border: 1px solid black;
+}
+
+main {
+  height: 90%;
+  width: 100vw;
+  border: 1px solid red;
+}
+
+footer {
+  height: 5%;
+  width: 100vw;
+  border: 1px solid black;
+}
