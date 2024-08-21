@@ -20,41 +20,12 @@ export default function Foods({listHeader}) {
         .catch(err => console.error(err))
     },[])
     
-    // not using the restaurants array
-    // //RESTAURANTS ARRAY
-    // useEffect(() => {
-    //     fetch("http://localhost:3005/restaurant")
-    //     .then(response => response.json())
-    //     .then(res => setRestaurants(res))
-    //     .catch(err => console.error(err))
-    // },[])
-
-
-    //SECONDS ARRAY
-    useEffect(() => {
-        setSeconds(foods.filter(food => food.seconds === true))
-    },[foods]);
-
-    /*-------------------------TESTING PURPOSES---------------------------------
-    useEffect(() => {
-        console.log(foods,"Foods Array")
-    }, [foods])
-
-    useEffect(() => {
-        console.log(restaurants, "Restaurants Array")
-    }, [restaurants])
-
-    useEffect(() => {
-        console.log(seconds, "Seconds Array")
-    }, [seconds])
-    ------------------------------------------------------------------------*/
-
     return (
         <>
-            <p className="seconds-title">{listHeader}</p>
-            {foods.filter(food => food.seconds === true).map(second => {
+            <p className="foods-title">{listHeader}</p>
+            {foods.map(food => {
                 return (
-                   <Food id={second.id} key={second.id} />
+                   <Food id={food.id} key={food.id} />
                 )
             })}     
         </>
