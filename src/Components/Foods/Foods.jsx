@@ -6,7 +6,7 @@ import Food from '../Food/Food.jsx';
 
 
 
-export default function Foods() {
+export default function Foods({listHeader}) {
 
     const [ restaurants, setRestaurants ] = useState([]);
     const [ foods, setFoods ] = useState([]);
@@ -20,14 +20,14 @@ export default function Foods() {
         .catch(err => console.error(err))
     },[])
     
-
-    //RESTAURANTS ARRAY
-    useEffect(() => {
-        fetch("http://localhost:3005/restaurant")
-        .then(response => response.json())
-        .then(res => setRestaurants(res))
-        .catch(err => console.error(err))
-    },[])
+    // not using the restaurants array
+    // //RESTAURANTS ARRAY
+    // useEffect(() => {
+    //     fetch("http://localhost:3005/restaurant")
+    //     .then(response => response.json())
+    //     .then(res => setRestaurants(res))
+    //     .catch(err => console.error(err))
+    // },[])
 
 
     //SECONDS ARRAY
@@ -35,7 +35,7 @@ export default function Foods() {
         setSeconds(foods.filter(food => food.seconds === true))
     },[foods]);
 
-    //-------------------------TESTING PURPOSES---------------------------------
+    /*-------------------------TESTING PURPOSES---------------------------------
     useEffect(() => {
         console.log(foods,"Foods Array")
     }, [foods])
@@ -47,12 +47,11 @@ export default function Foods() {
     useEffect(() => {
         console.log(seconds, "Seconds Array")
     }, [seconds])
-    //--------------------------------------------------------------------------
-
+    ------------------------------------------------------------------------*/
 
     return (
         <>
-            <p className="seconds-title">Your Seconds</p>
+            <p className="seconds-title">{listHeader}</p>
             {foods.filter(food => food.seconds === true).map(second => {
                 return (
                    <Food id={second.id} key={second.id} />

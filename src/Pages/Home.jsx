@@ -9,8 +9,7 @@ export default function Home() {
 
   return (
     <div>
-      <Outlet />
-      <Foods />
+      <h2>Home</h2>
     </div>
   )
 }
