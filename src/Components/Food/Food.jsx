@@ -1,8 +1,8 @@
-import "../CSS/Second.css";
+import "../CSS/Food.css";
 import { useState, useEffect } from'react';
 
 
-export default function Second ({ id }) {
+export default function Food ({ id }) {
 
     const [ oneSecond, setOneSecond ] = useState({});
 

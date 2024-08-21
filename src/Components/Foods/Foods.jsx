@@ -1,12 +1,12 @@
-import "../CSS/Seconds.css";
+import "../CSS/Foods.css";
 import { useState, useEffect } from 'react';
 
 //COMPONENTS
-import Second from '../Components/Second';
+import Food from '../Food/Food.jsx';
 
 
 
-export default function Seconds() {
+export default function Foods() {
 
     const [ restaurants, setRestaurants ] = useState([]);
     const [ foods, setFoods ] = useState([]);
@@ -55,7 +55,7 @@ export default function Seconds() {
             <p className="seconds-title">Your Seconds</p>
             {foods.filter(food => food.seconds === true).map(second => {
                 return (
-                   <Second id={second.id} key={second.id} />
+                   <Food id={second.id} key={second.id} />
                 )
             })}     
         </>
