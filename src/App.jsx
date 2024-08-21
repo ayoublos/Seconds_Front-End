@@ -14,28 +14,29 @@ import MobileNav from './Components/Footer/MobileNav.jsx'
 
 export default function App() {
   return (
-    <div className='view'>
-      <header>
-        <MobileHeader />
-      </header>
-      <main>
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/food' element={<FoodIndex />} />
-          <Route path='/seconds' element={<SecondsIndex />} />
-          <Route path='/food/new' element={<NewFood />} />
-          <Route path='/food/:id' element={<FoodShow />} />
-          <Route path='/food/:id/edit' element={<EditFood />} />
-          <Route path='/about' element={<About />} />
-      
-          <Route path='*' element={<FourOFour/>} />
-        </Routes>
-      </main>
-      <footer>
-        <div className='mobile-nav'>
+    <>
+      <div className='layout'>
+        <header>
+          <MobileHeader />
+        </header>
+        <main>
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/food' element={<FoodIndex />} />
+            <Route path='/seconds' element={<SecondsIndex />} />
+            <Route path='/food/new' element={<NewFood />} />
+            <Route path='/food/:id' element={<FoodShow />} />
+            <Route path='/food/:id/edit' element={<EditFood />} />
+            <Route path='/about' element={<About />} />
+        
+            <Route path='*' element={<FourOFour/>} />
+          </Routes>
+        </main>
+        <footer>
           <MobileNav />
-        </div>
-      </footer>
-    </div>
+        </footer>
+      </div>
+      
+    </>
   )
 }
