@@ -2,7 +2,7 @@ import "../Food/Food.css";
 import { useState, useEffect } from'react';
 
 
-export default function Food ({ id }) {
+export default function Food ({ id, seconds }) {
 
     const [ oneFood, setOneFood ] = useState({});
 
@@ -21,9 +21,11 @@ export default function Food ({ id }) {
         <div className="oneFood-main-container">  
             <img className="oneFood-image" src={oneFood.img} alt="food image" />
             <div className="oneFood-names-container">
-                <p className="oneFood-name">{oneFood.name}</p>
+                <div className="name-fork-container">
+                    <p className="oneFood-name">{oneFood.name}</p>
+                    {oneFood.seconds ? <img className="fork-icon" src="/fork-in-diagonal.svg" alt="fork icon" /> : null}
+                </div>
                 <p className="oneFood-restaurant">{oneFood.restaurant_name}</p>
-                <img className="fork-icon" src="/fork-in-diagonal.svg" alt="fork icon" />
             </div>
         </div>
     )
