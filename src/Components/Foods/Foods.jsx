@@ -1,4 +1,4 @@
-import "../CSS/Foods.css";
+import "../Foods/Foods.css";
 import { useState, useEffect } from 'react';
 
 //COMPONENTS

@@ -1,4 +1,4 @@
-import "../CSS/Food.css";
+import "../Food/Food.css";
 import { useState, useEffect } from'react';
 
 
