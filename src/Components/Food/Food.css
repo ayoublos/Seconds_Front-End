@@ -1,4 +1,4 @@
-.oneSecond-main-container {
+.oneFood-main-container {
     width: 80%;
     display: flex;
     flex-direction: row;
@@ -9,20 +9,20 @@
     margin-left: 10%;
 }
 
-.oneSecond-image {
+.oneFood-image {
     /* border: 1px solid black; */
     width: 150px;
     height: 140px;
 }
 
-.oneSecond-name {
+.oneFood-name {
     /* border: 1px solid black; */
     width: 100%;
     font-size: 20px;
     margin-top: 20px;
 }
 
-.oneSecond-restaurant {
+.oneFood-restaurant {
     margin-top: 20px;
     width: 100%;
 }
