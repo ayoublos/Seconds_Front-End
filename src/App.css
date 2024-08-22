@@ -1,11 +1,7 @@
 .layout {
-  width: 100vw;
-  height: 100vh;
-  display: grid;
-  grid-template-rows: 5% 1fr 10% ;
-  align-items: center;
-  justify-content: center;
-  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .layout * {
@@ -13,19 +9,20 @@
 }
 
 header {
+  height: 50px;
   width: 100vw;
   border: 1px solid black;
   background: lightblue;
 }
 
 main {
-  height: fit-content;
+  min-height: calc(100vh - 100px);
   width: 100vw;
   /* border: 1px solid red; */
 }
 
 footer {
-  height: 5vh;
+  height: 50px;
   width: 100vw;
   background: lightblue;
   border-top: 1px solid lightgray;
