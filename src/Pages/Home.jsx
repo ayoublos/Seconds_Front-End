@@ -9,7 +9,7 @@ export default function Home() {
 
   return (
     <div>
-      <h2>Home</h2>
+      <h2>CodeFix</h2>
     </div>
   )
 }
