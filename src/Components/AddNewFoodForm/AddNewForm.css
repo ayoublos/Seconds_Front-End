@@ -27,7 +27,6 @@
     margin-bottom: 1vw;
     padding: 1vw 3vw;
     border-radius: 2vw;
-    margin-left: 40vw;
 
 
     
@@ -71,10 +70,20 @@
     transition: background-color 0.3s;
   }
   
-  .button-group button.active {
+  .button-group .active {
     background-color: #007bff;
     color: white;
   }
+  .cancel{
+    margin-bottom: 1vw;
+    padding: 1vw 3vw;
+    border-radius: 2vw;
+    border: 2px solid black;
+}
+    .buttons{
+        display: flex;
+        justify-content: space-evenly
+    }
   
   
   

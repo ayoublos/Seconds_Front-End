@@ -2,9 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 export default function AddNewFoodForm() {
-    function handleCheckboxChange(e) {
-        setNewFood({ ...newFood, [e.target.id]: e.target.checked });
-      }
+ 
     
   const [hoverRating, setHoverRating] = useState(0);
 
@@ -142,7 +140,9 @@ export default function AddNewFoodForm() {
   <button
   type="button"
   className={newFood.notification === new Date(Date.now() + 7 * 24 * 60 * 60 * 1000).getTime() ? 'active' : ''}
-  onClick={() => handleNotificationToggle(1)}
+  onClick={() => handleNotificationToggle(1)
+
+  }
 >
   One Week
 </button>
@@ -174,7 +174,10 @@ export default function AddNewFoodForm() {
 
 
         <br />
-        <button className="addNewForm_submit">Submit</button>
+        <div className="buttons">  
+             <div className="cancel" onClick={()=>navigate('/')}>Cancel</div>
+        <button className="addNewForm_submit">Submit</button></div>
+     
       </form>
     </div>
   );
