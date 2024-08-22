@@ -1,0 +1,92 @@
+.addnewfood-container{
+    margin: 2vw;
+    text-align: start;
+    input{
+        margin-top: 1vw;
+        margin-bottom: 1vw;
+        width: 70vw;
+        padding: 1vw;
+        padding-left: 2vw;
+
+        border-radius: 2vw;
+        margin-left: 10vw;
+        
+        
+    }
+    h1{
+        margin-bottom: 1vw;
+        text-align: center;
+    }
+  
+    label{
+        margin-left: 12vw;
+    }
+    
+}
+.addNewForm_submit{
+    margin-bottom: 1vw;
+    padding: 1vw 3vw;
+    border-radius: 2vw;
+
+
+    
+}
+.plate-rating {
+    display: flex;
+    gap: 5px;
+  }
+  
+  .plate-rating img {
+    width: 5vw;
+    height: 5vw;
+    cursor: pointer;
+  }
+  .plate-rating{
+    margin-top: 2vw;
+    margin-left: 15vw;
+  }
+
+  hr{
+    margin: 1vw 10vw;
+    height: 2px;
+    background-color: black;
+  }
+  .notification-options {
+    margin-bottom: 20px;
+  }
+  
+  .button-group {
+    display: flex;
+    gap: 10px;
+    margin-left: 30vw;
+    margin-top: 2vw;
+  }
+  
+  .button-group button {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .button-group .active {
+    background-color: #007bff;
+    color: white;
+  }
+  .cancel{
+    margin-bottom: 1vw;
+    padding: 1vw 3vw;
+    border-radius: 2vw;
+    border: 2px solid black;
+}
+    .buttons{
+        display: flex;
+        justify-content: space-evenly
+    }
+  
+  
+  
+  
+ 
+
