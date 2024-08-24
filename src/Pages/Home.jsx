@@ -9,7 +9,10 @@ export default function Home() {
 
   return (
     <div>
-      <h2>CodeFix</h2>
+      <Foods
+        listHeader={"Your Seconds"}
+        limit={3}
+        onlySeconds={true}/>
     </div>
   )
 }

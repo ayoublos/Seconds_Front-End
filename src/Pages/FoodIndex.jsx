@@ -6,12 +6,13 @@ import Foods from '../Components/Foods/Foods.jsx';
 
 export default function FoodIndex() {
 
-  
-
   return (
     <div>
-      <p className="foods-title">All Food</p>
-      <Foods />
+      <Foods
+        listHeader={"All Food"}
+        limit={0}
+        onlySeconds={false}
+      />
     </div>
   )
 }
